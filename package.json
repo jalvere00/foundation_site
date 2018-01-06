@@ -1,0 +1,18 @@
+{
+  "name": "foundation_site",
+  "version": "1.0.0",
+  "description": "site built with foundation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jameel Alverez",
+  "license": "ISC",
+  "devDependencies": {
+    "handlebars": "^4.0.11"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "handlebars": "^4.0.11"
+  }
+}

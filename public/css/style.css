@@ -1,0 +1,85 @@
+.headerImage {
+	height:450px; 
+	margin:0px auto;
+	display:flex;
+	/*float:bottom;*/
+	flex-direction: column;
+	/*align-items:center;*/
+	/*justify-content:center; */
+	background-image:url('/img/hanyijie_sky_scenery_ship_anime_art_104162_2560x1024.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover
+}
+
+.profile_pic{
+	height: auto;
+	width: 140px;
+	overflow: hidden;
+	border: 9px solid rgba(0, 0, 0, 0.05);
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.title_container{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.tool_bar{
+	background-color: transparent;
+	color: white;
+	align-content: center;
+	justify-content: center;
+}
+	.tool_bar a{
+		color: white;
+	}
+	.tool_bar ul{
+		background-color: transparent;
+	}
+
+.tool_bar_list{
+	background-color: transparent;
+}
+
+.nav_elements{
+	background-color: transparent;
+}
+
+#footerId{
+	height: 250px;
+	margin: 0px auto;
+	display: flex;
+	background-color: #515051;
+	flex-direction: column;
+	padding: 0px;}
+	@media print, screen and (min-width: 40em){
+		#footerId{
+			padding: 0px 40px;
+		}
+	}
+	@media print, screen and (min-width: 64em){
+		#footerId{
+			padding: 0px 100px;
+		}
+	}
+
+#mainPage{
+	min-height: 300px}
+	@media print, screen and (min-width: 40em){
+		#mainPage{
+			padding: 0% 5%;
+		}
+	}
+	@media print, screen and (min-width:64em){
+		#mainPage{
+			padding: 0% 10%;
+		}
+	}
+
