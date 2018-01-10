@@ -6,6 +6,7 @@ app.set('port', process.env.PORT||8080);
 app.use('/js', express.static('public/js'));
 app.use('/css', express.static('public/css'));
 app.use('/img', express.static('public/img'));
+app.use('/svg', express.static('public/svg'));
 app.use('/foundation', express.static('public/foundation'));
 
 
