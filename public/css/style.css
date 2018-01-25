@@ -87,3 +87,7 @@
 	height: 30px;
 	width: auto;
 }
+
+.star_holder>i{
+	color: blue;
+}
