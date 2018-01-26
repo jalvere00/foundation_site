@@ -88,6 +88,43 @@
 	width: auto;
 }
 
-.star_holder>i{
-	color: blue;
+/*////////////////////////////// GRID SYSTEM //////////////////////////////////*/
+.grid-x{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap; 
+}
+
+#skills{
+
+}
+
+#skills>.title{
+	width: 100%;
+	/*flex-flow: row wrap;*/
+}
+
+.skill_section{
+	width: 100%;
+	/*flex-flow: row wrap;*/
+}
+
+.skill_section>.skill_title{
+	width: 100%;
+	margin: 0 10px;
+	/*flex-flow: row wrap;*/
+}
+
+.skill{
+	width: 20%;
+	margin: 0 10px;
+}
+
+.skill_name{
+	width: 50%
+}
+
+.skill_rating{
+	width: 50%
 }
