@@ -89,12 +89,13 @@
 }
 
 /*////////////////////////////// GRID SYSTEM //////////////////////////////////*/
-.grid-x{
+.grid_x{
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-flow: row wrap;
-	flex-flow: row wrap; 
+	-ms-flex-flow: column wrap;
+	flex-flow: column wrap; 
 }
+
 
 #skills{
 
@@ -102,29 +103,43 @@
 
 #skills>.title{
 	width: 100%;
-	/*flex-flow: row wrap;*/
+	flex-flow: column wrap;
 }
 
-.skill_section{
+#skills>.skill_section{
+	height: auto;
 	width: 100%;
 	/*flex-flow: row wrap;*/
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: column wrap;
+	flex-flow: row wrap;
 }
 
-.skill_section>.skill_title{
+#skills>.skill_section>.skill_title{
 	width: 100%;
 	margin: 0 10px;
-	/*flex-flow: row wrap;*/
+	flex-flow: column wrap; 
 }
 
-.skill{
+#skills>.skill_section>.skill{
 	width: 20%;
 	margin: 0 10px;
+	display: -ms-flexbox;
+	display: flex;
+
+	/*-ms-flex-flow: row wrap !important;*/
+	/*flex-flow: row wrap !important;*/
 }
 
 .skill_name{
-	width: 50%
+	display: -ms-flexbox;
+	display: flex;
+	width: 45%
 }
 
 .skill_rating{
-	width: 50%
+	display: -ms-flexbox;
+	display: flex;
+	width: 45%
 }
