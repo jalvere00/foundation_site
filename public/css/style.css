@@ -1,11 +1,16 @@
-.headerImage {
+
+body{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#headerImage {
 	height:450px; 
 	margin:0px auto;
 	display:flex;
-	/*float:bottom;*/
 	flex-direction: column;
-	/*align-items:center;*/
-	/*justify-content:center; */
 	background-image:url('/img/hanyijie_sky_scenery_ship_anime_art_104162_2560x1024.jpg');
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -30,6 +35,8 @@
 	align-items: center;
 	justify-content: center;
 }
+
+
 
 .tool_bar{
 	background-color: transparent;
@@ -88,6 +95,10 @@
 	width: auto;
 }
 
+#about-me{
+	
+}
+
 /*////////////////////////////// GRID SYSTEM //////////////////////////////////*/
 .grid_x{
 	display: -ms-flexbox;
@@ -96,50 +107,65 @@
 	flex-flow: column wrap; 
 }
 
-
-#skills{
-
-}
-
-#skills>.title{
+article>.title{
 	width: 100%;
 	flex-flow: column wrap;
+	padding: 0.5em 0em;
+	margin: 0px;
+	border-bottom: 1px solid;
 }
+
+#skills{
+	width: 90%;
+	margin:auto;
+}
+
 
 #skills>.skill_section{
 	height: auto;
 	width: 100%;
-	/*flex-flow: row wrap;*/
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-flow: column wrap;
 	flex-flow: row wrap;
-}
+	margin-top: 0.2em;
+	padding: 0 1em;
+} 
 
 #skills>.skill_section>.skill_title{
 	width: 100%;
-	margin: 0 10px;
-	flex-flow: column wrap; 
+	margin: 0.2em 0px;
+	flex-flow: column wrap;
+	text-align: left;
 }
 
 #skills>.skill_section>.skill{
-	width: 20%;
-	margin: 0 10px;
+	width: 50%;
+	padding: 0 10px;
 	display: -ms-flexbox;
 	display: flex;
-
-	/*-ms-flex-flow: row wrap !important;*/
-	/*flex-flow: row wrap !important;*/
+	margin: 10px 0px;
 }
 
 .skill_name{
 	display: -ms-flexbox;
 	display: flex;
-	width: 45%
+	width: 40%
 }
 
 .skill_rating{
+	padding-left: all;
 	display: -ms-flexbox;
 	display: flex;
-	width: 45%
+	width: auto;
+	margin-left: auto;
+	margin-right: 3em; 
+}
+
+/*/////////////////////////////////Experience/////////////////////////////////*/
+
+#experience>section{
+	text-align: left;
+	align-items: left;
+	justify-content: left;
 }
