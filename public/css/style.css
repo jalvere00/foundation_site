@@ -169,3 +169,24 @@ article>.title{
 	align-items: left;
 	justify-content: left;
 }
+
+.xp_entry{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.xp_header{
+	width: 20%;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.xp_entry_descrip{
+	width: 80%;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: column wrap;
+}
