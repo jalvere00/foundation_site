@@ -107,20 +107,19 @@ body{
 	flex-flow: column wrap; 
 }
 
-
-#skills{
-	width: 90%;
-	margin:auto;
-}
-
-
-#skills>.title{
+article>.title{
 	width: 100%;
 	flex-flow: column wrap;
 	padding: 0.5em 0em;
 	margin: 0px;
 	border-bottom: 1px solid;
 }
+
+#skills{
+	width: 90%;
+	margin:auto;
+}
+
 
 #skills>.skill_section{
 	height: auto;
@@ -161,4 +160,12 @@ body{
 	width: auto;
 	margin-left: auto;
 	margin-right: 3em; 
+}
+
+/*/////////////////////////////////Experience/////////////////////////////////*/
+
+#experience>section{
+	text-align: left;
+	align-items: left;
+	justify-content: left;
 }
