@@ -1,4 +1,3 @@
-
 body{
 	text-align: center;
 	align-items: center;
@@ -26,6 +25,17 @@ body{
 	border: 9px solid rgba(0, 0, 0, 0.05);
 	margin: 0 auto;
 	border-radius: 50%;
+	margin-top: 5em;
+}
+
+#headerName{
+	font-weight: 600;
+	border-bottom: 2px solid;
+	font-size: 3em;
+}
+
+#headerCarrier{
+	font-size: 1.5em;
 }
 
 .title_container{
@@ -43,6 +53,7 @@ body{
 	color: white;
 	align-content: center;
 	justify-content: center;
+	border-top: 1px solid;
 }
 	.tool_bar a{
 		color: white;
@@ -59,44 +70,8 @@ body{
 	background-color: transparent;
 }
 
-#footerId{
-	height: 250px;
-	margin: 0px auto;
-	display: flex;
-	background-color: #515051;
-	flex-direction: column;
-	padding: 0px;}
-	@media print, screen and (min-width: 40em){
-		#footerId{
-			padding: 0px 40px;
-		}
-	}
-	@media print, screen and (min-width: 64em){
-		#footerId{
-			padding: 0px 100px;
-		}
-	}
-
-#mainPage{
-	min-height: 300px}
-	@media print, screen and (min-width: 40em){
-		#mainPage{
-			padding: 0% 5%;
-		}
-	}
-	@media print, screen and (min-width:64em){
-		#mainPage{
-			padding: 0% 10%;
-		}
-	}
-
-.social_icon{
-	height: 30px;
-	width: auto;
-}
-
-#about-me{
-	
+.main_articles{
+	padding-top: 5em;
 }
 
 /*////////////////////////////// GRID SYSTEM //////////////////////////////////*/
@@ -161,8 +136,29 @@ article>.title{
 	margin-left: auto;
 	margin-right: 3em; 
 }
+/*///////////////////////////////// Star /////////////////////////////////*/
 
-/*/////////////////////////////////Experience/////////////////////////////////*/
+.star-5>i{
+	color:aquamarine;
+}
+
+.star-4>i:nth-child(-n+4){
+	color:aquamarine;
+}
+
+.star-3>i:nth-child(-n+3){
+	color:aquamarine;
+}
+
+.star-2>i:nth-child(-n+2){
+	color:aquamarine;
+}
+
+.star-1>i:nth-child(1){
+	color:aquamarine;
+}
+
+/*///////////////////////////////// Experience /////////////////////////////////*/
 
 #experience>section{
 	text-align: left;
@@ -184,9 +180,61 @@ article>.title{
 	flex-flow: column wrap;
 }
 
+.xp_header >.xp_title{
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.xp_header >.xp_time{
+	font-size: 1em;
+	font-weight: 600;
+}
+
 .xp_entry_descrip{
 	width: 80%;
 	display: -ms-flexbox;
 	display: flex;
 	flex-flow: column wrap;
+	padding-left: 1.5em;
+}
+
+.xp_entry_descrip>.xp_descrip_degree{
+	font-size: 1em;
+	font-weight: 600;
+}
+
+#footerId{
+	height: 250px;
+	margin: 0px auto;
+	display: flex;
+	background-color: #515051;
+	flex-direction: column;
+	padding: 0px;}
+	@media print, screen and (min-width: 40em){
+		#footerId{
+			padding: 0px 40px;
+		}
+	}
+	@media print, screen and (min-width: 64em){
+		#footerId{
+			padding: 0px 100px;
+		}
+	}
+
+#mainPage{
+	min-height: 300px}
+	@media print, screen and (min-width: 40em){
+		#mainPage{
+			padding: 0% 5%;
+		}
+	}
+	@media print, screen and (min-width:64em){
+		#mainPage{
+			padding: 0% 10%;
+		}
+	}
+
+.social_icon{
+	height: 30px;
+	width: auto;
 }
