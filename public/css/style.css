@@ -119,9 +119,18 @@ article>.title{
 	padding: 0 10px;
 	display: -ms-flexbox;
 	display: flex;
+	flex-grow: wrap;
 	margin: 10px 0px;
 }
+@media  screen and (max-width: 40em){
+	#skills>.skill_section>.skill{
+		width: 100%;
+	}
 
+	.skill_title{
+		display: none;
+	}
+}
 .skill_name{
 	display: -ms-flexbox;
 	display: flex;
