@@ -18,6 +18,38 @@ body{
 	-o-background-size:cover
 }
 
+
+#mainPage{
+	min-height: 300px
+}
+
+
+.main_articles{
+	/*padding-top: 5em;*/
+	/*width:90%;*/
+	padding: 5em 10% 0;
+}
+
+.main_articles:nth-child(even){
+	background-color:#57bc90;
+}
+
+.main_articles:nth-child(odd){
+	background-color:#77c9d4;
+}
+
+article>.title{
+	width: 100%;
+	flex-flow: column wrap;
+	padding: 0.5em 0em;
+	margin: 0px;
+	border-bottom: 1px solid;
+}
+
+.description{
+	margin: 0;
+}
+
 .profile_pic{
 	height: auto;
 	width: 140px;
@@ -47,7 +79,7 @@ body{
 }
 
 
-
+/*////////////////////////////// Tool Bar ///////////////////////////////*/
 .tool_bar{
 	background-color: transparent;
 	color: white;
@@ -70,10 +102,6 @@ body{
 	background-color: transparent;
 }
 
-.main_articles{
-	padding-top: 5em;
-}
-
 /*////////////////////////////// GRID SYSTEM //////////////////////////////////*/
 .grid_x{
 	display: -ms-flexbox;
@@ -82,17 +110,8 @@ body{
 	flex-flow: column wrap; 
 }
 
-article>.title{
-	width: 100%;
-	flex-flow: column wrap;
-	padding: 0.5em 0em;
-	margin: 0px;
-	border-bottom: 1px solid;
-}
-
 #skills{
-	width: 90%;
-	margin:auto;
+	padding: 5em 15% 0;
 }
 
 
@@ -147,24 +166,27 @@ article>.title{
 }
 /*///////////////////////////////// Star /////////////////////////////////*/
 
+.star_holder>i{
+	color:#00000033;
+}
 .star-5>i{
-	color:aquamarine;
+	color:blue;
 }
 
 .star-4>i:nth-child(-n+4){
-	color:aquamarine;
+	color:blue;
 }
 
 .star-3>i:nth-child(-n+3){
-	color:aquamarine;
+	color:blue;
 }
 
 .star-2>i:nth-child(-n+2){
-	color:aquamarine;
+	color:blue;
 }
 
 .star-1>i:nth-child(1){
-	color:aquamarine;
+	color:blue;
 }
 
 /*///////////////////////////////// Experience /////////////////////////////////*/
@@ -216,7 +238,7 @@ article>.title{
 	height: 250px;
 	margin: 0px auto;
 	display: flex;
-	background-color: #515051;
+	background-color: #015249;
 	flex-direction: column;
 	padding: 0px;}
 	@media print, screen and (min-width: 40em){
@@ -227,19 +249,6 @@ article>.title{
 	@media print, screen and (min-width: 64em){
 		#footerId{
 			padding: 0px 100px;
-		}
-	}
-
-#mainPage{
-	min-height: 300px}
-	@media print, screen and (min-width: 40em){
-		#mainPage{
-			padding: 0% 5%;
-		}
-	}
-	@media print, screen and (min-width:64em){
-		#mainPage{
-			padding: 0% 10%;
 		}
 	}
 
