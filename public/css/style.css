@@ -6,7 +6,7 @@ body{
 
 
 #headerImage {
-	height:450px; 
+	min-height:100vh;
 	margin:0px auto;
 	display:flex;
 	flex-direction: column;
@@ -23,21 +23,22 @@ body{
 	min-height: 300px
 }
 
+#about-me{
+	min-height:100vh;
+}
 
 .main_articles{
-	/*padding-top: 5em;*/
-	/*width:90%;*/
 	padding: 5em 10% 0;
 }
 
-.main_articles:nth-child(even){
+/*.main_articles:nth-child(even){
 	background-color:#57bc90;
 }
 
 .main_articles:nth-child(odd){
 	background-color:#77c9d4;
 }
-
+*/
 article>.title{
 	width: 100%;
 	flex-flow: column wrap;
@@ -57,7 +58,7 @@ article>.title{
 	border: 9px solid rgba(0, 0, 0, 0.05);
 	margin: 0 auto;
 	border-radius: 50%;
-	margin-top: 5em;
+	margin: 5em 0;
 }
 
 #headerName{
@@ -112,6 +113,7 @@ article>.title{
 
 #skills{
 	padding: 5em 15% 0;
+	min-height: 100vh;
 }
 
 
