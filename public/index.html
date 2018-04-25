@@ -325,13 +325,13 @@
 					</div>
 
 				</div>
-				<form id="footer-message-box" class="footer-info-holder">
+				<form id="footer-message-box" class="footer-info-holder" method="post" action="/message">
 					<div id="contact-info">
 						<input class="contact-info-elem" type="text" placeholder="Name" name="contact_name" required />
-						<input class="contact-info-elem" type="text" placeholder="Email" name="contact_email" required/ >
+						<input class="contact-info-elem" type="text" placeholder="Email" name="contact_email" required/>
 					</div>
 					<div id="message-container">
-						<textarea name="email-message" style="resize:none" id="message" cols="30" rows="4" required placeholder="Message"></textarea>
+						<textarea name="email_message" style="resize:none" id="message" cols="30" rows="4" required placeholder="Message"></textarea>
 					</div>
 					<button id="message-box-submit" class="button" type="submit">Send Message</button>
 				</form>
