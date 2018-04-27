@@ -307,29 +307,50 @@
 		</main>
 		<footer id="footerId">
 			<h2 class="title">Contact</h2>
-			<div id="footerInfo">
-				<div class="footer-info-container">
-					<span class="info_element_type">Phone:</span>
-					<div class="info_element_info">347-372-5123</div>
-				</div>
-				<div class="footer-info-container">
-					<span class="info_element_type">Email:</span>
-					<div class="info_element_info">
-						<a href="mailto:jamalvere@gmail.com">jamalvere@gmail.com</a>
+			<div id="footer-info">
+				<div id="footer-contact-info" class="footer-info-holder">
+					<div class="footer-info-container">
+						<span class="info_element_type"><i class="fi-telephone medium footer-icon"></i>Phone</span>
+						<div class="info_element_info">347-372-5123</div>
 					</div>
-				</div>
-				<div class="footer-info-container">
-					<span class="info_element_type">Location:</span>
-					<div class="info_element_info">Brookly, NY</div>
-				</div>
-				<div class="footer-info-container">
-					<a href="https://www.facebook.com/jameel.alverez"><img class="social_icon" src="svg\fi-social-facebook.svg" alt=""/></a>
-					<a href="https://github.com/jalvere00"><img class="social_icon" src="svg\fi-social-github.svg" alt=""/></a>
-					<a href="https://plus.google.com/u/0/110529652068972931401"><img class="social_icon" src="svg\fi-social-google-plus.svg" alt=""/></a>
-					<a href="https://www.linkedin.com/in/jameel-alverez-517b2996"><img class="social_icon" src="svg\fi-social-linkedin.svg" alt=""/></a>
-				</div>
-			</div>
+					<div class="footer-info-container">
+						<span class="info_element_type"><i class="fi-mail medium footer-icon"></i>Email</span>
+						<div class="info_element_info">
+							<a href="mailto:jamalvere@gmail.com">jamalvere@gmail.com</a>
+						</div>
+					</div>
+					<div class="footer-info-container">
+						<span class="info_element_type"><i class="fi-map medium footer-icon"></i>Location</span>
+						<div class="info_element_info">Brookly, NY</div>
+					</div>
 
+				</div>
+				<form id="footer-message-box" class="footer-info-holder" method="post" action="/message">
+					<div id="contact-info">
+						<input class="contact-info-elem" type="text" placeholder="Name" name="contact_name" required />
+						<input class="contact-info-elem" type="text" placeholder="Email" name="contact_email" required/>
+					</div>
+					<div id="message-container">
+						<textarea name="email_message" style="resize:none" id="message" cols="30" rows="4" required placeholder="Message"></textarea>
+					</div>
+					<button id="message-box-submit" class="button" type="submit">Send Message</button>
+				</form>
+
+			</div>
+			<div id="footer-social-media">
+				<a href="https://www.facebook.com/jameel.alverez">
+					<img class="social_icon" src="svg\fi-social-facebook.svg" alt=""/>
+				</a>
+				<a href="https://github.com/jalvere00">
+					<img class="social_icon" src="svg\fi-social-github.svg" alt=""/>
+				</a>
+				<a href="https://plus.google.com/u/0/110529652068972931401">
+					<img class="social_icon" src="svg\fi-social-google-plus.svg" alt=""/>
+				</a>
+				<a href="https://www.linkedin.com/in/jameel-alverez-517b2996">
+					<img class="social_icon" src="svg\fi-social-linkedin.svg" alt=""/>
+				</a>
+			</div>			
 		</footer>
 
 		<script type="text/javascript" src="/foundation/js/vendor/jquery.js"></script>
