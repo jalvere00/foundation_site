@@ -1,0 +1,79 @@
+#skills{
+	padding: 5em 15% 0;
+	min-height: 100vh;
+}
+
+
+#skills>.skill_section{
+	height: auto;
+	width: 100%;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: column wrap;
+	flex-flow: row wrap;
+	margin-top: 0.2em;
+	padding: 0 1em;
+} 
+
+#skills>.skill_section>.skill_title{
+	width: 100%;
+	margin: 0.2em 0px;
+	flex-flow: column wrap;
+	text-align: left;
+}
+
+#skills>.skill_section>.skill{
+	width: 50%;
+	padding: 0 10px;
+	display: -ms-flexbox;
+	display: flex;
+	flex-grow: wrap;
+	margin: 10px 0px;
+}
+@media  screen and (max-width: 40em){
+	#skills>.skill_section>.skill{
+		width: 100%;
+	}
+
+	.skill_title{
+		display: none;
+	}
+}
+.skill_name{
+	display: -ms-flexbox;
+	display: flex;
+	width: 40%
+}
+
+.skill_rating{
+	padding-left: all;
+	display: -ms-flexbox;
+	display: flex;
+	width: auto;
+	margin-left: auto;
+	margin-right: 3em; 
+}
+/*///////////////////////////////// Star /////////////////////////////////*/
+
+.star_holder>i{
+	color:#00000033;
+}
+.star-5>i{
+	color:blue;
+}
+
+.star-4>i:nth-child(-n+4){
+	color:blue;
+}
+
+.star-3>i:nth-child(-n+3){
+	color:blue;
+}
+
+.star-2>i:nth-child(-n+2){
+	color:blue;
+}
+
+.star-1>i:nth-child(1){
+	color:blue;
+}
