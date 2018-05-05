@@ -8,44 +8,49 @@
 }
 
 	#footerId>.title{
-		width: 100%;
+		width: 85%;
 		flex-flow: column wrap;
 		padding: 0.5em 0em 0em 0em;
-		margin: 0em 0em 0.5em 0em;
+		margin: 2em auto 0.75em auto;
+		font-weight: bold;
+		font-size: 1.75rem;
+		border-bottom: 1px solid;
 	}
 
 	#footer-info{
 		display: flex;
-		flex-direction: row;
-		padding:0em 4em;
+		flex-direction: column;
+		padding:0em 1em;
 	}
 
 	#footer-contact-info{
 		display:flex;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 3em;
 	}
 
-	#footer-contact-info{
-		flex: 0 0 25%;
-	}
 		#footer-contact-info-title{
-			text-align: left;
+			/*text-align: left;*/
 			font-weight: bold;
+			width: 100%
 		}
-		#footer-contact-info-title::after{
+/*		#footer-contact-info-title::after{
 			content: '';
 		    display: block;
 		    position: absolute;
-		    width: 10%;
+		    width: 50%;
 		    border-top: 1px solid #292121;
 		    z-index: 100;
-		}
+
+		}*/
 
 		#footer-contact-info>.footer-info-container{
 			display: flex;
 			flex-direction: column;
 			margin-bottom: 0.5em;
-			text-align: left;
+			flex: 1 0 150px;
+			justify-content: space-between;
 		}
 
 		#footer-contact-info>.footer-info-container>.info_element_type{
@@ -61,23 +66,24 @@
 
 	#footer-message-box{
 		flex: 0 0 75%;
-		text-align: right
+		/*text-align: right*/
 	}
 
 
 		#footer-message-box-title{
-			text-align: left;
+			/*text-align: left;*/
 			font-weight: bold;
+			margin-bottom: 1.5em;
 		}
 
-		#footer-message-box-title::after{
+/*		#footer-message-box-title::after{
 			content: '';
 		    display: block;
 		    position: absolute;
 		    width: 10%;
 		    border-top: 1px solid #292121;
 		    z-index: 100;	
-		}
+		}*/
 
 		#message-box-submit{
 			border-radius: 1em
@@ -86,6 +92,8 @@
 		#contact-info{
 			display: flex;
 			justify-content: space-between;
+			flex-direction: column;
+			flex-wrap: wrap;
 		}
 
 		#contact-info>.contact-info-elem{
@@ -93,11 +101,11 @@
 		}
 
 		#contact-info>.contact-info-elem:first-child{
-			margin-right: 0.25em	
+			margin-right: 0em	
 		}
 
 		#contact-info>.contact-info-elem:last-child{
-			margin-left: 0.25em	
+			margin-left: 0em	
 		}
 
 		#message-box-submit{
@@ -131,7 +139,142 @@
 			padding: 0em 1em;
 		}
 
+@media screen and (min-width: 64em){
+	#footerId{
+		min-height: 250px;
+	}
 
+		#footerId>.title{
+			width: 100%;
+			flex-flow: column wrap;
+			padding: 0.5em 0em 0em 0em;
+			margin: 0em 0em 0.5em 0em;
+			font-size: 2.5rem
+		}
+
+		#footer-info{
+			display: flex;
+			flex-direction: row;
+			padding:0em 4em;
+		}
+
+		#footer-contact-info{
+			display:flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+		}
+
+		#footer-contact-info{
+			flex: 0 0 25%;
+			margin-bottom: 0em;
+		}
+			#footer-contact-info-title{
+				text-align: left;
+				font-weight: bold;
+			}
+			#footer-contact-info-title::after{
+				content: '';
+			    display: block;
+			    position: absolute;
+			    width: 10%;
+			    border-top: 1px solid #292121;
+			    z-index: 100;
+			}
+
+			#footer-contact-info>.footer-info-container{
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 0.5em;
+				text-align: left;
+				flex:none;
+			}
+
+			#footer-contact-info>.footer-info-container>.info_element_type{
+				margin-right: 3px;
+				font-weight:bold;
+				margin-bottom: 0.25em;
+			}
+
+			.footer-icon{
+				margin-right: 0.5em
+			}
+
+
+		#footer-message-box{
+			flex: 0 0 75%;
+			text-align: right
+		}
+
+
+			#footer-message-box-title{
+				text-align: left;
+				font-weight: bold;
+				margin-bottom: 0.5rem;
+			}
+
+			#footer-message-box-title::after{
+				content: '';
+			    display: block;
+			    position: absolute;
+			    width: 10%;
+			    border-top: 1px solid #292121;
+			    z-index: 100;	
+			}
+
+			#message-box-submit{
+				border-radius: 1em
+			}
+
+			#contact-info{
+/*				display: flex;
+				justify-content: space-between;*/
+				flex-direction: row;
+				flex-wrap: nowrap;
+			}
+
+			#contact-info>.contact-info-elem{
+				flex:0 1 50%;
+			}
+
+			#contact-info>.contact-info-elem:first-child{
+				margin-right: 0.25em	
+			}
+
+			#contact-info>.contact-info-elem:last-child{
+				margin-left: 0.25em	
+			}
+
+			#message-box-submit{
+				border-radius: 1em
+			}
+
+			#footer-contact-info>.footer-info-container>.info_element_type{
+				margin-right: 3px;
+				font-weight:bold;
+				margin-bottom: 0.25em;
+			}
+
+
+		#footer-social-media{
+			/*display: flex;*/
+			height: 150px;
+			align-items: center;
+			padding-top: 30px;
+			/*justify-content: center;*/
+			border-top: 1px solid;
+		}
+
+	/*	#footer-icon-center{
+			margin: auto 0em;
+		}
+	*/
+
+			.social_icon{
+				height: 30px;
+				width: auto;
+				padding: 0em 1em;
+			}
+}
 @media print, screen and (min-width: 40em){
 	#footerId{
 		padding: 0px 40px;
