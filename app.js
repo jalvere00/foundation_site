@@ -42,7 +42,7 @@ app.post('/message', (req,res)=>{
 	let mailOptions = {
 		from: `"${name}" <${email}>`,
 		to: "darkage400@gmail.com",
-		subject: "Message from Node.js",
+		subject: `Message from Node.js ${email}`,
 		text:message
 	};
 

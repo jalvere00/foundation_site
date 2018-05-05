@@ -1,0 +1,19 @@
+
+
+#about-me{
+	min-height:100vh;
+}
+
+.description{
+	margin: 0;
+}
+
+.profile_pic{
+	height: auto;
+	width: 140px;
+	overflow: hidden;
+	border: 9px solid rgba(0, 0, 0, 0.05);
+	margin: 0 auto;
+	border-radius: 50%;
+	margin: 5em 0;
+}
