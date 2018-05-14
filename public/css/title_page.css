@@ -4,22 +4,27 @@
 	margin:0px auto;
 	display:flex;
 	flex-direction: column;
-	background-image:url('/img/hanyijie_sky_scenery_ship_anime_art_104162_2560x1024.jpg');
+	background-image:url('/img/astronomy-beautiful-clouds-355465.jpg');
 	background-size:cover;
 	background-repeat:no-repeat;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
-	-o-background-size:cover
+	-o-background-size:cover;
+	background-position: right;
+	/*filter: drop-shadow(0 1em 1em -1em rgb(0, 0, 0, 0.6));*/
+	box-shadow: 0 1em 1em rgb(0, 0, 0, 0.6);
 }
 
 #headerName{
 	font-weight: 600;
-	border-bottom: 2px solid;
-	font-size: 3em;
+	border-bottom: 1px solid #FFF;
+	font-size: 4em;
+	color:#FFF;
 }
 
 #headerCarrier{
-	font-size: 1.5em;
+	font-size: 2em;
+	color:#FFF;
 }
 
 .title_container{
@@ -40,6 +45,7 @@
 }
 	.tool_bar a{
 		color: white;
+		/*font-size: 1.25em*/
 	}
 	.tool_bar ul{
 		background-color: transparent;
