@@ -20,6 +20,7 @@
 	margin: 0.2em 0px;
 	flex-flow: column wrap;
 	text-align: left;
+	font-weight: 600;
 }
 
 #skills>.skill_section>.skill{
