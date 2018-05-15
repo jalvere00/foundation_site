@@ -36,25 +36,39 @@
 }
 
 /*////////////////////////////// Tool Bar ///////////////////////////////*/
+#header-navbar-container{
+	width: 100%;
+	height: 60px
+}
+
 .tool_bar{
 	background-color: transparent;
 	color: white;
 	align-content: center;
 	justify-content: center;
 	border-top: 1px solid;
+	width: 100%;
+	transition: background-color 0.3s ease;
 }
-	.tool_bar a{
+	#main_navbar>.tool_bar_list{
+		background-color: transparent;
+		width: 100%;
+		display:flex;
+		justify-content: center;
+	}
+	.nav_elements{
+		flex: 0 1 85px;
+		background-color: transparent;
+	}
+	.nav_elements>a{
 		color: white;
 		/*font-size: 1.25em*/
 	}
-	.tool_bar ul{
-		background-color: transparent;
-	}
 
-.tool_bar_list{
-	background-color: transparent;
-}
-
-.nav_elements{
-	background-color: transparent;
+.main_navbar_scroll{
+	position: fixed;
+	top:0;
+	background-color: #000000; 
+	border-top: none;
+	/*transition: background-color 1s ease;*/
 }

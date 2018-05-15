@@ -1,3 +1,13 @@
+function toolbar_scroll(){
+	if(($(window).scrollTop() - $("#header-navbar-container").offset().top)>0){
+		$("#main_navbar").addClass("main_navbar_scroll")
+		console.log("black")
+	}else{
+		$("#main_navbar").removeClass("main_navbar_scroll")
+		console.log("none")
+	}
+}
+
 $(document).ready(function(){
 	$("#main_navbar>ul>li>a").click(function(event){
 		let target = $(this.hash);
@@ -6,9 +16,13 @@ $(document).ready(function(){
 			event.preventDefault();
 			$('html,body').animate({
 				scrollTop:target.offset().top
-			}, 1000,function(){
-				console.log("works")
-			})
+			}, 1000)
 		}
+	})
+
+	toolbar_scroll()
+	$(window).on('scroll',function(event){
+		// console.log($(window).scrollTop() - $("#main_navbar").offset().top)
+		toolbar_scroll()
 	})
 })
