@@ -1,10 +1,10 @@
 function toolbar_scroll(){
 	if(($(window).scrollTop() - $("#header-navbar-container").offset().top)>0){
 		$("#main_navbar").addClass("main_navbar_scroll")
-		console.log("black")
+		// console.log("black");
 	}else{
 		$("#main_navbar").removeClass("main_navbar_scroll")
-		console.log("none")
+		// console.log("none");
 	}
 }
 
@@ -21,6 +21,7 @@ $(document).ready(function(){
 	})
 
 	toolbar_scroll()
+	// $("#main_navbar").css("transition","background-color 0.3s ease")
 	$(window).on('scroll',function(event){
 		// console.log($(window).scrollTop() - $("#main_navbar").offset().top)
 		toolbar_scroll()
