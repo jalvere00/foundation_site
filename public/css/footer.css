@@ -5,6 +5,8 @@
 	flex-direction: column;
 	background-color: #237d73ab;
 	padding: 0px;
+/*	height:100vh;
+	max-height: 50em;*/
 }
 
 	#footerId>.title{

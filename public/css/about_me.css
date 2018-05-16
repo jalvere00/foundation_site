@@ -1,19 +1,31 @@
 
-
 #about-me{
 	min-height:100vh;
+	padding:1.5em 10%;
 }
 
+	#profile-descriptor-container{
+		display:flex;
+		padding-top: 2em; 
+	}
+
+		#profile-badge{
+			flex:0 0 30%;
+		}
+			.profile_pic{
+				/*height: auto;*/
+				width: 140px;
+				overflow: hidden;
+				border: 9px solid rgba(0, 0, 0, 0.05);
+				margin: 0;
+				border-radius: 50%;
+				/*margin: 2em 0 0;*/
+			}
+		#descriptor-container{
+			flex:0 0 65%;
+			text-align: left;
+		}
 .description{
 	margin: 0;
 }
 
-.profile_pic{
-	height: auto;
-	width: 140px;
-	overflow: hidden;
-	border: 9px solid rgba(0, 0, 0, 0.05);
-	margin: 0 auto;
-	border-radius: 50%;
-	margin: 5em 0;
-}
