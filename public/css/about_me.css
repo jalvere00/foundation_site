@@ -3,27 +3,48 @@
 	min-height:100vh;
 	padding:1.5em 10%;
 }
+#about-me>.title{
+	margin-bottom: 2em
+}
 
 	#profile-descriptor-container{
 		display:flex;
 		padding-top: 2em; 
+		justify-content: space-between;
 	}
 
 		#profile-badge{
-			flex:0 0 30%;
+			flex:0 0 18em;
+			display: block;
+			height: 30em;
+			/*border: 1px solid #000;*/
+			border-radius: 0.5em;
+			box-shadow: -3px -3px 1em rgb(0, 0, 0, 0.6);
+			background-color: #fff;
+			overflow: hidden;
+			margin-right: 2em
+		}
+
+		#profile-badge-img{
+			padding: 2em 1em 1em;
+			/*background-color: #003786;*/
 		}
 			.profile_pic{
-				/*height: auto;*/
-				width: 140px;
+				width: 12em;
+				height: 12em;
 				overflow: hidden;
 				border: 9px solid rgba(0, 0, 0, 0.05);
 				margin: 0;
 				border-radius: 50%;
-				/*margin: 2em 0 0;*/
 			}
 		#descriptor-container{
-			flex:0 0 65%;
+			flex:1 1 auto;
 			text-align: left;
+			background-color: #fff;
+			/*border: 1px solid #000;*/
+			border-radius: 0.5em;
+			box-shadow: 0px 0px 0.5em rgb(0, 0, 0, 0.6);
+			padding: 1em
 		}
 .description{
 	margin: 0;
