@@ -1,6 +1,6 @@
 #headerImage {
 	height:100vh;
-	max-height: 50em;
+	/*max-height: 50em;*/
 	margin:0px auto;
 	display:flex;
 	flex-direction: column;

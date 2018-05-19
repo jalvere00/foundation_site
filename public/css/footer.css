@@ -186,7 +186,7 @@
 			#footer-contact-info>.footer-info-container{
 				display: flex;
 				flex-direction: column;
-				margin-bottom: 0.5em;
+				margin-bottom: 0.75em;
 				text-align: left;
 				flex:none;
 			}
@@ -194,7 +194,7 @@
 			#footer-contact-info>.footer-info-container>.info_element_type{
 				margin-right: 3px;
 				font-weight:bold;
-				margin-bottom: 0.25em;
+				margin-bottom: 0em;
 			}
 
 			.footer-icon{
@@ -248,12 +248,6 @@
 
 			#message-box-submit{
 				border-radius: 1em
-			}
-
-			#footer-contact-info>.footer-info-container>.info_element_type{
-				margin-right: 3px;
-				font-weight:bold;
-				margin-bottom: 0.25em;
 			}
 
 
