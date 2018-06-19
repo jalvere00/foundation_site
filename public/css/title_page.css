@@ -12,7 +12,7 @@
 	-o-background-size:cover;
 	background-position: right;
 	/*filter: drop-shadow(0 1em 1em -1em rgb(0, 0, 0, 0.6));*/
-	box-shadow: 0 1em 1em rgb(0, 0, 0, 0.6);
+	box-shadow: 0 1em 1em rgba(0, 0, 0, 0.6);
 }
 
 #headerName{

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="90.042595mm"
+   height="71.226875mm"
+   viewBox="0 0 90.042595 71.226876"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="my_icon_ink.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="206.69193"
+     inkscape:cy="119.16472"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="962"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-51.146094,-48.659271)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:103.56015015px;line-height:1.25;font-family:'Bell MT';-inkscape-font-specification:'Bell MT';letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.53937519"
+       x="67.528061"
+       y="119.12706"
+       id="text3705"
+       transform="scale(0.99999481,1.0000052)"><tspan
+         sodipodi:role="line"
+         id="tspan3703"
+         x="67.528061"
+         y="119.12706"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:103.56015015px;font-family:'Bell MT';-inkscape-font-specification:'Bell MT Bold';fill:#ffff00;stroke-width:0.53937519">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:106.39816284px;line-height:1.25;font-family:'Bell MT';-inkscape-font-specification:'Bell MT Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.55415702"
+       x="46.938229"
+       y="117.52283"
+       id="text3701"
+       transform="scale(0.99999481,1.0000052)"><tspan
+         sodipodi:role="line"
+         id="tspan3699"
+         x="46.938229"
+         y="117.52283"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bell MT';-inkscape-font-specification:'Bell MT Italic';stroke-width:0.55415702">J</tspan></text>
+  </g>
+</svg>

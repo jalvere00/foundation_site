@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 90.042595 71.226876"
+   height="71.226875mm"
+   width="90.042595mm">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-51.146094,-48.659271)"
+     id="layer1">
+    <text
+       transform="scale(0.99999481,1.0000052)"
+       id="text3705"
+       y="119.12706"
+       x="67.528061"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:103.56015015px;line-height:1.25;font-family:'Bell MT';-inkscape-font-specification:'Bell MT';letter-spacing:0px;word-spacing:0px;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.53937519"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:103.56015015px;font-family:'Bell MT';-inkscape-font-specification:'Bell MT Bold';fill:#ffff00;stroke-width:0.53937519"
+         y="119.12706"
+         x="67.528061"
+         id="tspan3703">A</tspan></text>
+    <text
+       transform="scale(0.99999481,1.0000052)"
+       id="text3701"
+       y="117.52283"
+       x="46.938229"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:106.39816284px;line-height:1.25;font-family:'Bell MT';-inkscape-font-specification:'Bell MT Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.55415702"
+       xml:space="preserve"><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Bell MT';-inkscape-font-specification:'Bell MT Italic';stroke-width:0.55415702"
+         y="117.52283"
+         x="46.938229"
+         id="tspan3699">J</tspan></text>
+  </g>
+</svg>

@@ -11,7 +11,8 @@
   "author": "Jameel Alverez",
   "license": "ISC",
   "devDependencies": {
-    "handlebars": "^4.0.11"
+    "handlebars": "^4.0.11",
+    "sass": "^1.6.1"
   },
   "dependencies": {
     "body-parser": "^1.18.2",

@@ -1,9 +1,9 @@
-
 #about-me{
 	min-height: 50em;
 	padding:1.5em 10%;
 	background-color: rgb(255,255,255);
 }
+
 #about-me>.title{
 	margin-bottom: 2em
 }
@@ -20,10 +20,11 @@
 			height: 28em;
 			/*border: 1px solid #000;*/
 			border-radius: 0.5em;
-			box-shadow: -3px -3px 1em rgb(0, 0, 0, 0.6);
+			box-shadow: -3px -3px 1em rgb(0, 0, 0);
+			box-shadow: -3px -3px 1em rgba(0, 0, 0, 0.6);
 			/*background-color: #093B83;*/
-			background-color: rgb(225,225,255, 0.9);
-			display: flex;
+			background-color: rgba(225, 225, 255, 0.692);
+			display: flex;                             
 			flex-direction: column;
 			overflow: hidden;
 			margin-right: 2em
@@ -45,6 +46,7 @@
 				width: 12em;
 				height: 12em;
 				overflow: hidden;
+				border: 9px solid rgba(0, 0, 0);
 				border: 9px solid rgba(0, 0, 0, 0.05);
 				margin: 0;
 				border-radius: 50%;
@@ -75,10 +77,10 @@
 			/*border: 1px solid #000;*/
 			/*background-color: rgb( 255,255,255, 0.5);*/
 			border-radius: 0.5em;
-			box-shadow: 0px 0px 0.5em rgb(0, 0, 0, 0.6);
+			box-shadow: 0px 0px 0.5em rgb(0, 0, 0);
+			box-shadow: 0px 0px 0.5em rgba(0, 0, 0, 0.6);
 			padding: 2em
 		}
 .description{
 	margin: 0;
 }
-
