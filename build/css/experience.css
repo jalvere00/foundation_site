@@ -1,0 +1,44 @@
+/*///////////////////////////////// Experience /////////////////////////////////*/
+
+#experience>section{
+	text-align: left;
+	align-items: left;
+	justify-content: left;
+}
+
+.xp_entry{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.xp_header{
+	width: 20%;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.xp_header >.xp_title{
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.xp_header >.xp_time{
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.xp_entry_descrip{
+	width: 80%;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: column wrap;
+	padding-left: 1.5em;
+}
+
+.xp_entry_descrip>.xp_descrip_degree{
+	font-size: 1em;
+	font-weight: 600;
+}
