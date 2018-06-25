@@ -45,3 +45,121 @@ article .title {
   -ms-flex-flow: column wrap;
   flex-flow: column wrap;
 }
+
+#headerImage {
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-image: url("../../../../../img/astronomy-beautiful-clouds-355465.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  -webkit-box-shadow: 0 1em 1em rgba(0,0,0,.6);
+  box-shadow: 0 1em 1em rgba(0,0,0,.6);
+}
+
+#headerImage #headerName {
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
+  font-size: 4em;
+  color: #fff;
+}
+
+#headerImage #headerCarrier {
+  font-size: 2em;
+  color: #fff;
+}
+
+.title_container {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#header-navbar-container {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.tool_bar {
+  background-color: transparent;
+  color: #fff;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: 1px solid;
+  width: 100%;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25em;
+  height: 60px;
+}
+
+#header-logo {
+  padding: 1.5em;
+  text-align: left;
+  font-weight: 700;
+  width: 45%;
+}
+
+#header-logo>a {
+  color: #fff;
+}
+
+#main_navbar>.tool_bar_list {
+  background-color: transparent;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-size: .95em;
+  padding-right: 1.5em;
+}
+
+.nav_elements {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 85px;
+  flex: 0 1 85px;
+  background-color: transparent;
+}
+
+.nav_elements>a {
+  color: #fff;
+}
+
+.main_navbar_scroll {
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  border-top: none;
+}

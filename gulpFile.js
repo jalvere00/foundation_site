@@ -3,7 +3,36 @@ var gulp = require('gulp'),
     cssClean = require('gulp-clean-css'),
     sourcemap = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    browserSync = require('browser-sync'),
+    nodemon = require('gulp-nodemon');
+
+var port = 8080;
+var syncPort = 8081;
+
+gulp.task('nodemon', function(cb){
+    var called = false;
+    return nodemon({
+        script:'app.js',
+        env:{
+            'PORT':port
+        }
+    }).on('start', function(){
+        if(!called){
+            cb();
+            called = true;
+        }
+    })
+})
+
+gulp.task('browser-sync', ['nodemon'], function(){
+    browserSync.init({
+        proxy:"localhost:"+port.toString(),
+        files: ["public/**/*.*"],
+        // browser: "google chrome",
+        port: syncPort,
+    })
+})
 
 gulp.task("css", function(){
     gulp.src('build/css/style.css')
@@ -43,3 +72,10 @@ gulp.task("sass", function(){
         .pipe(sourcemap.write())
         .pipe(gulp.dest("public/css"))
 })
+
+gulp.task('watch', function(){
+    gulp.watch('build/sass/**/*', ['sass']);
+    // gulp.watch('build/sass', ['sass'])
+})
+
+gulp.task('dev', ['browser-sync', 'sass', 'watch'])
