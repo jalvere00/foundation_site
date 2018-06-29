@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 console.log(process.env.GMAIL);
 const transporter = nodemailer.createTransport({
@@ -14,6 +15,9 @@ const transporter = nodemailer.createTransport({
 });
 
 var app = express();
+
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'view'));
 
 app.set('port', process.env.PORT||8080);
 
@@ -28,8 +32,8 @@ app.use('/svg', express.static('public/svg'));
 app.use('/foundation', express.static('public/foundation'));
 
 
-app.get('*',function(req,res){
-	res.sendFile(__dirname+'/public/index.html')
+app.get('/',function(req,res){
+	res.render('index', {})
 })
 
 

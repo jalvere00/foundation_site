@@ -75,7 +75,7 @@ gulp.task("sass", function(){
 
 gulp.task('watch', function(){
     gulp.watch('build/sass/**/*', ['sass']);
-    // gulp.watch('build/sass', ['sass'])
+    gulp.watch('view/**/*', ['sass'])
 })
 
 gulp.task('dev', ['browser-sync', 'sass', 'watch'])
