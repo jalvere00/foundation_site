@@ -2,47 +2,61 @@
 	padding: 5em;
 	min-height: 100vh;
 	background-color: #70cee2ab;
+
+	.title{
+		margin-bottom: 2em;
+	}
 }
 
 #skills-container{
 	margin:  0.2em auto;	
 	max-width: 55em;
-}
 
-#skills-container>.skill_section{
-	height: auto;
-	/* width: 100%; */
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-flow: column wrap;
-	flex-flow: row wrap;
-	margin-top: 0.2em;
-	padding: 0 1em;
-} 
+	.skill_section{
+		height: auto;
+		/* width: 100%; */
+		display: flex;
+		-ms-flex-flow: column wrap;
+		flex-flow: row wrap;
+		margin-top: 0.2em;
+		padding: 0 1em;
+	} 
+	.skill_title{
+		width: 100%;
+		margin: 0.2em 0px;
+		flex-flow: column wrap;
+		text-align: left;
+		font-weight: 100;
+		color:#6c668a
+	}
 
-#skills-container>.skill_section>.skill_title{
-	width: 100%;
-	margin: 0.2em 0px;
-	flex-flow: column wrap;
-	text-align: left;
-	font-weight: 600;
-}
+	.skill{
+		width: 50%;
+		padding: 5px 10px;
+		display: flex;
+		flex-grow: wrap;
+		.skill_name{
+			display: flex;
+			width: 40%;			
+			h6{
+				font-weight: 600;
+			}
+		}
+		.skill_rating{
+			padding-left: all;
+			display: flex;
+			width: auto;
+			margin-left: auto;
+			margin-right: 3em; 
+		}
+	}
 
-#skills-container>.skill_section>.skill{
-	width: 50%;
-	padding: 5px 10px;
-	display: -ms-flexbox;
-	display: flex;
-	flex-grow: wrap;
-	/* margin: 10px 0px; */
-	/* background-color:rgba(119, 201, 212, 0.549); */
-}
-
-#skills-container>.skill_section>.skill:hover{
-	/* background-color:green; */
-	/* filter: grayscale(10%); */
-	opacity: 0.8;
-	background-color:rgba(119, 201, 212, 0.45);
+	.skill:hover{
+		/* background-color:green; */
+		/* filter: grayscale(10%); */
+		opacity: 0.8;
+		background-color:rgba(119, 201, 212, 0.45);
+	}
 }
 
 @media  screen and (max-width: 40em){
@@ -54,20 +68,7 @@
 		display: none;
 	}
 }
-.skill_name{
-	display: -ms-flexbox;
-	display: flex;
-	width: 40%
-}
 
-.skill_rating{
-	padding-left: all;
-	display: -ms-flexbox;
-	display: flex;
-	width: auto;
-	margin-left: auto;
-	margin-right: 3em; 
-}
 /*///////////////////////////////// Star /////////////////////////////////*/
 
 .star_holder>i{

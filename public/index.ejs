@@ -63,14 +63,35 @@
 					</div>
 					<div id="descriptor-container">
 						<h3>About Me</h3>
-						<p class="description">I graduated from The City College of New York with a Bachelors degree in Computer Engineering. While there I started working as an intern for the Operation Planning/ System Data Research division of New York City Transit in my senior year of college. After graduation, I got hired by that very division as a Staff Analyst/Software Developer. There I worked with such a width range of technologies and on a lot of different projects that range from writing Java code to format and transfer data in Oracle database to building a dashboard from the ground up which query a mongo database. There I learn how to work hard and smart to get the job done and I showed that I have to ability to grow, learn and solve any problem that arises.</p>
+						<p class="description">I graduated from The City College of New York with a Bachelors degree in Computer Engineering. While there I started working as an intern for the Operation Planning/ System Data Research division of New York City Transit in my senior year of college. After graduation, I got hired by that very division as a Staff Analyst/Software Developer. There I worked with such a width range of technologies and on a lot of different projects that range from writing Java code to format and transfer data in Oracle database to building a dashboard from the ground up which query a mongo database. There I learn how to work hard and smart to get the job done, and I showed that I have to ability to grow, learn and solve any problem that arises.</p>
 					</div>
 				</div>
 			</article>
 			<article id="skills" class="main_articles">
 				<h3 class="title">Abilities</h3>
 				<div id="skills-container">
-					<section id="language_skills" class="skill_section">
+					<% skills.forEach(function(category){ %>
+						<section id="language_skills" class="skill_section">
+							<h5 class="skill_title"><%= category.category%></h5>
+						<% category.entries.forEach(function(entry){ %>
+							<div class="skill">
+								<div class="skill_name">
+									<h6><%=entry.name%></h6>
+								</div>
+								<div class="skill_rating">
+									<div class="star_holder star-<%=entry.rate%>">
+										<i class="fi-star"></i>
+										<i class="fi-star"></i>
+										<i class="fi-star"></i>
+										<i class="fi-star"></i>
+										<i class="fi-star"></i>
+									</div>
+								</div>		
+							</div>
+						<% }) %>
+						</section>
+					<% }) %>
+					<!-- <section id="language_skills" class="skill_section">
 						<h5 class="skill_title">Programming Languages</h5>
 						<div class="skill">
 							<div class="skill_name">
@@ -283,7 +304,7 @@
 								</div>
 							</div>
 						</div>
-					</section>
+					</section> -->
 				</div>
 			</article>
 			<article id="experience" class="main_articles">

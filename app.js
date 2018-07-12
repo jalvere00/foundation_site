@@ -5,7 +5,98 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const path = require('path');
 
+const skills = [
+	{
+		category:"Programming Languages",
+		entries:[
+			{
+				name:"C++",
+				rate:2
+			},
+			{
+				name:"Java",
+				rate:4
+			},
+			{
+				name:"Python",
+				rate:5
+			},
+			
+			{
+				name:"JavaScript",
+				rate:5
+			}
+		] 
+	},
+	{
+		category:"Databases",
+		entries:[
+			{
+				name:"Oracle",
+				rate:4
+			},
+			{
+				name:"MongoSQL",
+				rate:4
+			},
+			{
+				name:"PostgreSQL",
+				rate:4
+			}
+		] 
+	},
+	{
+		category:"JavaScript Libraries",
+		entries:[
+			{
+				name:"jQuery",
+				rate:4
+			},
+			{
+				name:"React (Babel)",
+				rate:5
+			}
+		] 
+	},
+	{
+		category:"Frontend Frameworks",
+		entries:[
+			{
+				name:"Material-UI",
+				rate:4
+			},
+			{
+				name:"Bootstrap",
+				rate:4
+			}
+		] 
+	},
+	{
+		category:"Server Frameworks",
+		entries:[
+			{
+				name:"Django",
+				rate:4
+			},
+			{
+				name:"Nodejs",
+				rate:4
+			}
+		] 
+	},
+	{
+		category:"Version Control",
+		entries:[
+			{
+				name:"Git",
+				rate:4
+			}
+		] 
+	}
+]
+
 console.log(process.env.GMAIL);
+
 const transporter = nodemailer.createTransport({
 	service:"GMAIL",
 	auth:{
@@ -33,7 +124,7 @@ app.use('/foundation', express.static('public/foundation'));
 
 
 app.get('/',function(req,res){
-	res.render('index', {})
+	res.render('index', {skills:skills})
 })
 
 

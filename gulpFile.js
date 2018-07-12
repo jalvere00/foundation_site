@@ -16,7 +16,8 @@ gulp.task('nodemon', function(cb){
         script:'app.js',
         env:{
             'PORT':port
-        }
+        },
+        watch:['view', 'public', 'app.js']
     }).on('start', function(){
         if(!called){
             cb();
@@ -28,7 +29,7 @@ gulp.task('nodemon', function(cb){
 gulp.task('browser-sync', ['nodemon'], function(){
     browserSync.init({
         proxy:"localhost:"+port.toString(),
-        files: ["public/**/*.*"],
+        files: ["public/**/*.*", "app.js"],
         // browser: "google chrome",
         port: syncPort,
     })
