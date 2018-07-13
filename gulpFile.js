@@ -57,7 +57,7 @@ gulp.task("css", function(){
 gulp.task("sass", function(){
     gulp.src('build/sass/style.scss')
         .pipe(sourcemap.init())
-        .pipe(sass())
+        .pipe(sass().on('error',sass.logError))
         .pipe(cssClean({
                 compatibility: "ie8", 
                 keepSpecialComments : 0,
